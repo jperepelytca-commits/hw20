@@ -1,0 +1,83 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #e6f3ff, #ffffff);
+    margin: 20px;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Меню */
+#main-nav {
+    background-color: rgba(240, 240, 240, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+.nav-link {
+    text-decoration: none;
+    color: #0055aa;
+    font-weight: bold;
+    margin: 0 10px;
+}
+.nav-link:hover {
+    color: #ff6600;
+}
+
+/* Заголовки */
+#main-title {
+    color: #222;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 30px;
+}
+.dog-name {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Контейнер з картками собак */
+.dogs-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap; /* щоб на вузьких екранах переносились */
+}
+
+/* Картки собак */
+.dog-card {
+    border: 3px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #fafafa;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.dog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.25);
+}
+.dog-photo {
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Індивідуальні стилі для кожної собаки */
+#dog-kira {
+    border-color: #3366cc;
+}
+#dog-kira .dog-name {
+    color: #3366cc;
+}
+
+#dog-tusya {
+    border-color: #ff6699;
+}
+#dog-tusya .dog-name {
+    color: #ff3366;
+}
